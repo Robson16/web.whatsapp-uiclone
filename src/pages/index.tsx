@@ -2,6 +2,11 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <h1>Hello World!</h1>
-  )
+    <div className={styles.container}>
+      <aside className={styles.aside}>
+      </aside>
+      <main className={styles.main}>
+      </main >
+    </div>
+  );
 }
