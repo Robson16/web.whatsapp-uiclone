@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-          <title>Whatsapp UI Clone</title>
         </Head>
         <body>
           <Main />

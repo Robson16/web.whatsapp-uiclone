@@ -1,12 +1,23 @@
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.scss';
+
+import { Contact } from '../components/Contact';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <aside className={styles.aside}>
-      </aside>
-      <main className={styles.main}>
-      </main >
+      <div className={styles.aside}>
+        <div className={styles.contactsList}>
+          <Contact />
+          <Contact />
+          <Contact />
+          <Contact />
+          <Contact />
+        </div>
+      </div>
+      <div className={styles.main}>
+        <div className={styles.chat}>
+        </div>
+      </div>
     </div>
   );
 }

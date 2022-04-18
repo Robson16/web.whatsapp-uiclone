@@ -1,0 +1,112 @@
+.contactContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  pointer-events: all;
+  background-color: var(--background-default);
+  cursor: pointer;
+
+  &.active {
+    background-color: var(--background-default-active);
+  }
+}
+
+.infos {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 0;
+  padding-right: 15px;
+}
+
+.rowOne {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  line-height: normal;
+
+  .name {
+    text-align: left;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--primary-strong);
+  }
+
+  .lastMessageTime {
+    margin-left: 6px;
+
+    flex: none;
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--secondary-lighter);
+  }
+}
+
+.rowTwo {
+  display: flex;
+  align-items: center;
+  min-width: 20px;
+  font-size: 13px;
+  color: var(--secondary);
+
+  margin-top: 2px;
+
+  .lastMessage {
+    text-align: left;
+
+    background-color: initial;
+
+    flex-grow: 1;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .icons {
+    margin-left: 6px;
+
+    flex: none;
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--secondary-lighter);
+
+    .icon {
+      display: inline-block;
+      color: var(--icon-lighter);
+      vertical-align: top;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .unreadMessages {
+    padding: 0.3em 0.4em 0.4em;
+    text-align: center;
+    background-color: var(--unread-marker-background);
+    border-radius: 1.1em;
+
+    display: inline-block;
+    min-width: 0.9em;
+    min-height: 1em;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1em;
+    color: var(--unread-marker-text);
+    vertical-align: top;
+  }
+}

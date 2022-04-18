@@ -1,0 +1,49 @@
+.avatarContainer,
+.spacer {
+  display: flex;
+}
+
+.spacer {
+  padding: 0 15px 0 13px;
+  align-items: center;
+  flex: none;
+}
+
+.withDisappearingMessages {
+  position: relative;
+}
+
+.icon,
+.photo {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon {
+  position: absolute;
+  right: -3px;
+  bottom: 0;
+  padding: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--panel-header-background);
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 1000;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    color: var(--icon-fixed);
+  }
+}
+
+.photo {
+  position: relative;
+  background-color: var(--avatar-background);
+
+  img {
+    border-radius: 50%;
+  }
+}
